@@ -2,11 +2,16 @@
   "name": "wordpress-query-page",
   "version": "1.0.0",
   "description": "A component for fetching WordPress page data from the REST API.",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/ryelle/wordpress-query-page"
   },
+  "keywords": [
+    "react",
+    "react-component",
+    "wordpress",
+    "wpapi"
+  ],
   "license": "GPL-2.0+",
   "devDependencies": {
     "babel-core": "^6.17.0",
