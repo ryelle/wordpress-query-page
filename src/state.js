@@ -44,7 +44,7 @@ function requests( state = {}, action ) {
 		case PAGE_REQUEST:
 		case PAGE_REQUEST_SUCCESS:
 		case PAGE_REQUEST_FAILURE:
-			return Object.assign( {}, state[ action.pagePath ], { [ action.pagePath ]: PAGE_REQUEST === action.type } );
+			return Object.assign( {}, state, { [ action.pagePath ]: PAGE_REQUEST === action.type } );
 		default:
 			return state;
 	}
