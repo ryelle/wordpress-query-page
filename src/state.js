@@ -4,7 +4,10 @@
  */
 import { combineReducers } from 'redux';
 import keyBy from 'lodash/keyBy';
-const site = require( 'wpapi' )( { endpoint: SiteSettings.endpoint, nonce: SiteSettings.nonce } );
+import API from 'wordpress-rest-api-oauth-1';
+const api = new API( {
+	url: SiteSettings.endpoint
+} );
 
 /**
  * Page actions
@@ -87,7 +90,12 @@ export function requestPage( path ) {
 			pagePath: path
 		} );
 
-		return site.pages().path( path ).embed().then( ( data ) => {
+		const query = {
+			pagename: path,
+			_embed: true,
+		};
+
+		api.get( '/wp/v2/pages', query ).then( data => {
 			const page = data[0];
 			dispatch( {
 				type: PAGE_REQUEST_SUCCESS,
