@@ -20,7 +20,7 @@ export const PAGE_REQUEST_FAILURE = 'wordpress-redux/page/REQUEST_FAILURE';
  * @param  {Object} action Action payload
  * @return {Object}        Updated state
  */
-function items( state = {}, action ) {
+export function items( state = {}, action ) {
 	switch ( action.type ) {
 		case PAGE_REQUEST_SUCCESS:
 			const posts = keyBy( [ action.page ], 'id' );
@@ -39,7 +39,7 @@ function items( state = {}, action ) {
  * @param  {Object} action Action payload
  * @return {Object}        Updated state
  */
-function requests( state = {}, action ) {
+export function requests( state = {}, action ) {
 	switch ( action.type ) {
 		case PAGE_REQUEST:
 		case PAGE_REQUEST_SUCCESS:
@@ -57,7 +57,7 @@ function requests( state = {}, action ) {
  * @param  {Object} action Action payload
  * @return {Object}        Updated state
  */
-function paths( state = {}, action ) {
+export function paths( state = {}, action ) {
 	switch ( action.type ) {
 		case PAGE_REQUEST_SUCCESS:
 			return Object.assign( {}, state, {
