@@ -1,0 +1,78 @@
+{
+  "id": 1086,
+  "date": "2013-03-15T18:21:12",
+  "date_gmt": "2013-03-15T23:21:12",
+  "guid": {
+    "rendered": "http://wptest.io/demo/?page_id=1086"
+  },
+  "modified": "2013-03-15T18:21:12",
+  "modified_gmt": "2013-03-15T23:21:12",
+  "slug": "about",
+  "type": "page",
+  "link": "https://wpapi.local/page/about/",
+  "title": {
+    "rendered": "About"
+  },
+  "content": {
+    "rendered": "<p><a title=\"WP Test - The Best Tests For WordPress\" href=\"http://wptest.io\" target=\"_blank\">WP Test</a> is a fantastically exhaustive set of test data to measure the integrity of your plugins and themes.</p>\n<p>The foundation of these tests are derived from <a title=\"Theme Unit Test\" href=\"http://codex.wordpress.org/Theme_Unit_Test\" target=\"_blank\">WordPress’ Theme Unit Test Codex</a> data. It’s paired with lessons learned from over three years of theme and plugin support, and baffling corner cases, to create a potent cocktail of simulated, quirky user content.</p>\n<p>The word &#8220;comprehensive&#8221; was purposely left off this description. It&#8217;s not. There will always be something new squarely scenario to test. That&#8217;s where you come in. <a title=\"Contact\" href=\"http://wptest.io/contact/\">Let us know</a> of a test we&#8217;re not covering. We&#8217;d love to squash it.</p>\n<p>Let’s make WordPress testing easier and resilient together.</p>\n",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "<p>WP Test is a fantastically exhaustive set of test data to measure the integrity of your plugins and themes. The foundation of these tests are derived from WordPress’ Theme Unit Test Codex data. It’s paired with lessons learned from over three years of theme and plugin support, and baffling corner cases, to create a potent cocktail of [&hellip;]</p>\n",
+    "protected": false
+  },
+  "author": 2,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "open",
+  "ping_status": "open",
+  "template": "",
+  "meta": [],
+  "_links": {
+    "self": [
+      {
+        "href": "https://wpapi.local/wp-json/wp/v2/pages/1086"
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://wpapi.local/wp-json/wp/v2/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://wpapi.local/wp-json/wp/v2/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://wpapi.local/wp-json/wp/v2/users/2"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://wpapi.local/wp-json/wp/v2/comments?post=1086"
+      }
+    ],
+    "version-history": [
+      {
+        "href": "https://wpapi.local/wp-json/wp/v2/pages/1086/revisions"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://wpapi.local/wp-json/wp/v2/media?parent=1086"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}
