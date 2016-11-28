@@ -1,6 +1,6 @@
 {
   "name": "wordpress-query-page",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A component for fetching WordPress page data from the REST API.",
   "repository": {
     "type": "git",
