@@ -1,10 +1,11 @@
 /**
  * External dependencies
  */
-import { Component, PropTypes } from 'react';
+import { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import debugFactory from 'debug';
+import PropTypes from 'prop-types';
 
 /**
  * Internal dependencies
@@ -42,11 +43,11 @@ class QueryPage extends Component {
 QueryPage.propTypes = {
 	pagePath: PropTypes.string.isRequired,
 	requestingPage: PropTypes.bool,
-	requestPage: PropTypes.func
+	requestPage: PropTypes.func,
 };
 
 QueryPage.defaultProps = {
-	requestPage: () => {}
+	requestPage: () => {},
 };
 
 export default connect(
@@ -58,7 +59,7 @@ export default connect(
 	},
 	( dispatch ) => {
 		return bindActionCreators( {
-			requestPage
+			requestPage,
 		}, dispatch );
 	}
 )( QueryPage );

@@ -6,7 +6,7 @@ import { combineReducers } from 'redux';
 import keyBy from 'lodash/keyBy';
 import API from 'wordpress-rest-api-oauth-1';
 const api = new API( {
-	url: SiteSettings.endpoint
+	url: SiteSettings.endpoint,
 } );
 
 /**
@@ -64,7 +64,7 @@ export function paths( state = {}, action ) {
 	switch ( action.type ) {
 		case PAGE_REQUEST_SUCCESS:
 			return Object.assign( {}, state, {
-				[ action.pagePath ]: action.postId
+				[ action.pagePath ]: action.postId,
 			} );
 		default:
 			return state;
@@ -74,7 +74,7 @@ export function paths( state = {}, action ) {
 export default combineReducers( {
 	items,
 	requests,
-	paths
+	paths,
 } );
 
 /**
@@ -87,7 +87,7 @@ export function requestPage( path ) {
 	return ( dispatch ) => {
 		dispatch( {
 			type: PAGE_REQUEST,
-			pagePath: path
+			pagePath: path,
 		} );
 
 		const query = {
@@ -96,19 +96,19 @@ export function requestPage( path ) {
 		};
 
 		api.get( '/wp/v2/pages', query ).then( data => {
-			const page = data[0];
+			const page = data[ 0 ];
 			dispatch( {
 				type: PAGE_REQUEST_SUCCESS,
 				postId: page.id,
 				pagePath: path,
-				page
+				page,
 			} );
 			return null;
 		} ).catch( ( error ) => {
 			dispatch( {
 				type: PAGE_REQUEST_FAILURE,
 				pagePath: path,
-				error
+				error,
 			} );
 		} );
 	};
