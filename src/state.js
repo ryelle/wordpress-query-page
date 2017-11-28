@@ -3,7 +3,7 @@
  * External dependencies
  */
 import { combineReducers } from 'redux';
-import keyBy from 'lodash/keyBy';
+import { keyBy } from 'lodash';
 import API from 'wordpress-rest-api-oauth-1';
 const api = new API( {
 	url: SiteSettings.endpoint,
